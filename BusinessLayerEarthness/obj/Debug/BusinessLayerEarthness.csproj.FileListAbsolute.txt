@@ -1,0 +1,12 @@
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\bin\Debug\BusinessLayerEarthness.dll.config
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\bin\Debug\BusinessLayerEarthness.dll
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\bin\Debug\BusinessLayerEarthness.pdb
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\bin\Debug\DAL.dll
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\bin\Debug\EntityFramework.dll
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\bin\Debug\DAL.pdb
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\bin\Debug\EntityFramework.xml
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\obj\Debug\BusinessLayerEarthness.csprojResolveAssemblyReference.cache
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\obj\Debug\BusinessLayerEarthness.dll
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\BusinessLayerEarthness\obj\Debug\BusinessLayerEarthness.pdb

@@ -1,0 +1,128 @@
+﻿@model DAL.Models.User
+
+@{
+    Layout = @"~\Views\Shared\_Layout.cshtml";
+}
+
+
+
+<div class="container ptb">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Welcome @Model.UserName again ! </h2>
+            <p class="mt">
+                These are your collected points .You must use a code before throwing the bottle
+                to check your identity and you have to put the bottles one by one.
+                While validating your code , enjoy watching publicity spots on our smart can .
+               
+            </p>
+            <p class="store">
+                Here is your secret code : <br /> @Model.UserId
+
+            </p>
+            <p class="store">
+                Don't forget to install our mobile app !<br />
+                <img src="~/assets/img/google-play.png" height="80" />
+            </p>
+
+
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-default orange-circle-button">
+                   @Model.UserPoints points
+               <span class="orange-circle-greater-than"></span>
+                </button>
+
+        </div>
+                </div><!--/row-->
+            </div>
+            <div id="map">
+               
+            </div>
+<script type="text/javascript">
+      function initMap() {
+          var uluru = { lat: 36.83707649, lng: 10.23813128 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALSyfBlVttboAZJI96sKtLip6-BjfawaU&callback=initMap">
+</script>
+
+
+
+            <div class="container ptb">
+                <div class="row centered">
+                    <h2 class="mb">Our current offers<br />Collect & enjoy !</h2>
+                    <div class="col-md-4">
+                        <div class="price-table">
+                            <div class="p-head">
+                                Standard
+                            </div>
+                            <div class="p-body">
+                                <ul class="features">
+                                    <li>1GB internet connection</li>
+                                    <li>100 points merci (ooredoo)</li>
+                                    
+                                </ul>
+                                <div class="price">
+                                   
+                                    <span class="detail">100</span>
+                                    <span class="sub">points.</span>
+                                </div><!--/price-->
+                                <button class="btn btn-conf-2 btn-green">Get offer Now</button>
+                            </div><!--/p-body-->
+                        </div><!--/price-table-->
+                    </div><!--/col-md-4-->
+
+                    <div class="col-md-4">
+                        <div class="price-table">
+                            <div class="p-head">
+                                BONUS
+                            </div>
+                            <div class="p-body">
+                                <ul class="features">
+                                    
+                                    <li>3GB Internet connection</li>
+                                    <li>50 Restaurant ticket</li>
+                                    <li>30% Reduction from Pull&Bear</li>
+                                </ul>
+                                <div class="price">
+                                   
+                                    <span class="detail">300</span>
+                                    <span class="sub">points.</span>
+                                </div><!--/price-->
+                                <button class="btn btn-conf-2 btn-green">Get offer Now</button>
+                            </div><!--/p-body-->
+                        </div><!--/price-table-->
+                    </div><!--/col-md-4-->
+
+                    <div class="col-md-4">
+                        <div class="price-table">
+                            <div class="p-head">
+                                ULTIMATE
+                            </div>
+                            <div class="p-body">
+                                <ul class="features">
+                                    <li>One week in hotel*</li>
+                                    <li>A smart phone from your choise</li>
+                                    
+                                </ul>
+                                <div class="price">
+                                    
+                                    <span class="detail">800</span>
+                                    <span class="sub">Points.</span>
+                                </div><!--/price-->
+                                <button class="btn btn-conf-2 btn-green">Get offer Now</button>
+                            </div><!--/p-body-->
+                        </div><!--/price-table-->
+                    </div><!--/col-md-4-->
+                </div>
+            </div>

@@ -1,0 +1,139 @@
+﻿@model DAL.Models.Professional
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+
+    <link href="~/Content/css/reset.min.css" rel="stylesheet" />
+    <link href="~/Content/css/css.css" rel="stylesheet" />
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link href="~/Content/css/styleCom.css" rel="stylesheet" />
+    
+
+</head>
+
+<body>
+
+    <!-- Mixins-->
+    <!-- Pen Title-->
+
+    <div class="rerun">
+        @Html.ActionLink("Users registration here", "StartUser","User")
+    </div>
+     @if (ViewBag.register != null) {
+
+        <h2 class="rerun" style="font-family:Algerian" >@ViewBag.register</h2>
+
+    }
+    <div class="container">
+        <div class="card"></div>
+        <div class="card">
+            <h1 class="title">Companies Login</h1>
+            @if (ViewBag.logerror != null)
+            {  <h2 class="title">@ViewBag.logerror </h2> }
+            @using (Html.BeginForm("Login", "Professional", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="input-container">
+
+                    @Html.TextBoxFor(m => m.CompanyEmail, new { @class = "form-control" })
+                    @Html.LabelFor(m => m.CompanyEmail,"Mail Adress", new { @class = "col-md-2 control-label" })
+                    @Html.ValidationMessageFor(m => m.CompanyEmail, "", new { @class = "text-danger" })
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+
+
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    <div class="bar"></div>
+                </div>
+                <div class="button-container">
+
+                    <button type="submit"><span>GO</span></button>
+
+                </div>
+
+
+            }
+        </div>
+        <div class="card alt">
+            <div class="toggle"></div>
+            <h1 class="title">
+               Companies Registration
+                <div class="close"></div>
+            </h1>
+            @using (Html.BeginForm("Create","Professional",FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    
+                <div class="input-container">
+                        
+                     @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.LabelFor(model => model.CompanyName, htmlAttributes: new { @class = "control-label col-md-2" })                         
+                     @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                    <div class="bar"></div>  
+                    </div>
+
+                    <div class="input-container">
+                        
+                            @Html.EditorFor(model => model.CompanyAdress, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.LabelFor(model => model.CompanyAdress, htmlAttributes: new { @class = "control-label col-md-2" })
+                         @Html.ValidationMessageFor(model => model.CompanyAdress, "", new { @class = "text-danger" })
+                        <div class="bar"></div>  
+                    </div>
+
+                    <div class="input-container">
+                        
+                            @Html.EditorFor(model => model.CompanyEmail, new { htmlAttributes = new { @class = "form-control",type="email" } })
+                        @Html.LabelFor(model => model.CompanyEmail, htmlAttributes: new { @class = "control-label col-md-2" })  
+                          @Html.ValidationMessageFor(model => model.CompanyEmail, "", new { @class = "text-danger" })
+                        <div class="bar"></div>  
+                    </div>
+
+                    <div class="input-container">
+                       
+                            @Html.EditorFor(model => model.CompanyPhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.LabelFor(model => model.CompanyPhoneNumber, htmlAttributes: new { @class = "control-label col-md-2" })   
+                         @Html.ValidationMessageFor(model => model.CompanyPhoneNumber, "", new { @class = "text-danger" })
+                        <div class="bar"></div>  
+                    </div>
+
+                    <div class="input-container">
+                       
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control",type="password" } })
+                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })   
+                         @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        <div class="bar"></div>  
+                    </div>
+
+                    <div class="button-container">
+
+                        <button type="submit"><span>SUBMIT</span></button>
+
+                    </div>
+
+            }
+
+        </div>
+    </div>
+    <!-- Portfolio--><a id="portfolio" href="http://andytran.me/" title="Facebook page"><i class="fa fa-link"></i></a>
+    <!-- CodePen--><a id="codepen" href="http://codepen.io/andytran/" title="More details"><i class="fa fa-codepen"></i></a>
+    <script src="~/Scripts/js/jquery.min.js"></script>
+    <script src="~/Scripts/js/index.js"></script>
+
+
+</body>
+</html>
+
+

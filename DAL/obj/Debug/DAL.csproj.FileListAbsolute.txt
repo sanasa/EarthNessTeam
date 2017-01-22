@@ -1,0 +1,10 @@
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\bin\Debug\DAL.dll.config
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\bin\Debug\DAL.dll
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\bin\Debug\DAL.pdb
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\obj\Debug\DAL.dll
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\obj\Debug\DAL.pdb
+C:\Users\Sana\Documents\Visual Studio 2015\Projects\SanaTests\ColumbiaTests\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
